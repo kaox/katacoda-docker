@@ -1,1 +1,1 @@
-Hola
+Bienvenido al curso
