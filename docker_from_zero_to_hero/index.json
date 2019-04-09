@@ -8,12 +8,20 @@
         "text": "step1-linux.md"
       },
       {
-        "title": "Instalación de Docker",
-        "text": "step2-comandos.md"
+        "title": "$ docker image",
+        "text": "step2-cmd-image.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "$ docker container",
+        "text": "step3-cmd-container.md"
+      },
+      {
+        "title": "$ docker network",
+        "text": "step4-cmd-network.md"
+      },
+      {
+        "title": "$ docker volume",
+        "text": "step5-cmd-volume.md"
       }
     ],
     "intro": {
