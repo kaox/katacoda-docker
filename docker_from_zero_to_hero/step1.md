@@ -1,10 +1,10 @@
 ### pwd
 Obtiene la ruta en donde nos encontramos
-`pwd` {{execute HOST1}}
+`pwd`{{execute}}
 
 ### ls
 Lista los directorios 
-`ls` {{execute HOST1}}
+`ls`{{execute}}
 
 ### cd
 
