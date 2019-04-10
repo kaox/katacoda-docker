@@ -21,6 +21,8 @@ Crea archivos vacios
 
 `touch cinturon-negro.txt`{{execute}}
 
+Tambien podemos crear varios archivos en diferentes carpetas
+
 `touch taller-ninja/carpeta1/cinturon-marron.txt taller-ninja/carpeta2/cinturon-azul.txt`{{execute}}
 
 ### ls
@@ -40,11 +42,21 @@ Y si queremos subir de nivel (es decir retroceder una carpeta)
 `cd ../`{{execute}}
 
 ### cp
+Cp (Copy) nos permite copiar archivos o directorios
+
+`cp taller-ninja/carpeta1/cinturon-marron.txt taller-ninja/carpeta2/cinturon-marron.txt`{{execute}}
+
+Para copiar el contenido de un directorio de forma recursiva utilizamos la opción `-r` 
+
+`cp -r taller-ninja/carpeta2/ taller-ninja/carpeta3/`{{execute}}
 
 ### mv
+Mv (Move) nos permite mover archivos o directorios
+
+`mv cinturon-negro.txt taller-ninja/carpeta3/`{{execute}}
 
 ### rm
-
+Rm (Remove) Elimina 
 
 
 ### cat
