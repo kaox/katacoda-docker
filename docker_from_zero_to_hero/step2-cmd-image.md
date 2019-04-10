@@ -1,16 +1,31 @@
-### $ docker image
+Administramos las imagenes Docker
+
 `docker image --help`{{execute}}
 
 #### pull
+Descargar las imagenes del registry (Docker Hub) 
+`docker image pull ubuntu`{{execute}}
+`docker image pull tomcat:8.5-alpine`{{execute}}
 
 #### ls
+Lista las imagenes
+`docker image ls`{{execute}}
 
 #### rm
-
-#### tag
-
-#### push
+Elimina imagenes
+`docker image rm ubuntu`{{execute}}
 
 #### inspect
+Mustra el detalle de la imagen
+`docker image inspect tomcat:8.5-alpine`{{execute}}
+
+#### tag
+Etiquetamos una imagen
+`docker tag tomcat:8.5-alpine kaox/webapp`{{execute}}
+
+#### push
+Enviamos una imagen al registry
+`docker login`{{execute}}
+`docker push kaox/webapp`{{execute}}
 
 #### prune
