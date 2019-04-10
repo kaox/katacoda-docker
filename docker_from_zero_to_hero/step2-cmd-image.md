@@ -1,4 +1,4 @@
-Administramos las imagenes Docker
+Con el comando `docker image` administraremos las imagenes de Docker, para ver todas las opciones que tenemos vamos a ejecutar la ayuda del comando
 
 `docker image --help`{{execute}}
 
