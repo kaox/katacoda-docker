@@ -14,6 +14,7 @@ Lista las imagenes
 #### rm
 Elimina imagenes
 `docker image rm ubuntu`{{execute}}
+`docker image ls`{{execute}}
 
 #### inspect
 Mustra el detalle de la imagen
@@ -22,6 +23,7 @@ Mustra el detalle de la imagen
 #### tag
 Etiquetamos una imagen
 `docker tag tomcat:8.5-alpine kaox/webapp`{{execute}}
+`docker image ls`{{execute}}
 
 #### push
 Enviamos una imagen al registry
@@ -29,3 +31,5 @@ Enviamos una imagen al registry
 `docker push kaox/webapp`{{execute}}
 
 #### prune
+Limpiamos las imagenes colgadas
+`docker image prune`{{execute}}
