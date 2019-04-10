@@ -1,3 +1,5 @@
+Antes de empezar con Docker necesitamos que conoscas algunos comandos basicos de Linux
+
 ### pwd
 Pwd (print working directory) nos muestra la ruta en donde nos encontramos
 
@@ -60,7 +62,7 @@ Cd (Change Directory) nos permite movernos entre directorios
 
 Y si queremos subir de nivel (es decir retroceder una carpeta) utilizamos el comando 
 
-`cd ../../`
+`cd ../../`{{execute}}
 
 Para este ejemplo hemos subido dos niveles.
 
