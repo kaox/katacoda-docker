@@ -1,25 +1,43 @@
 ### pwd
-Nos mustra la ruta en donde nos encontramos
+Pwd (print working directory) nos muestra la ruta en donde nos encontramos
+
 `pwd`{{execute}}
 
 ### mkdir
-Crea carpetas
+Mkdir (Make directory) crea carpetas nuevas
+
 `mkdir taller-ninja`{{execute}}
+
+Si queremos crear una carpeta oculta anteponemos un punto en el nombre de la carpeta
+
 `mkdir .ninja-oculto`{{execute}}
-`mkdir taller-ninja/{carpeta1,carpeta2/{sub1,sub2},carpeta3}`{{execute}}
+
+Para crear un arbol de carpetas usamos la opción -p y para crear varias carpetas en un mismo nodo usamos `{sub1,sub2}` 
+
+`mkdir -p taller-ninja/{carpeta1,carpeta2/{sub1,sub2},carpeta3}`{{execute}}
 
 ### touch
-Crea archivos
+Crea archivos vacios 
+
 `touch cinturon-negro.txt`{{execute}}
-`touch cinturon-marron.txt cinturon-azul.txt`{{execute}}
+
+`touch taller-ninja/carpeta1/cinturon-marron.txt taller-ninja/carpeta2/cinturon-azul.txt`{{execute}}
 
 ### ls
-Muestra los archivos y carpetas 
+Lista el contenido de un directorio
+
 `ls`{{execute}}
 
+`ls taller-ninja/carpeta1/`{{execute}}
+
 ### cd
+Cd (Change Directory) nos permite movernos entre directorios
 
+`cd taller-ninja/carpeta1/`{{execute}}
 
+Y si queremos subir de nivel (es decir retroceder una carpeta)
+
+`cd ../`{{execute}}
 
 ### cp
 
