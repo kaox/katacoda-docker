@@ -32,6 +32,27 @@ Lista el contenido de un directorio
 
 `ls taller-ninja/carpeta1/`{{execute}}
 
+Para ver los archivos y carpetas ocultas utilizamos la opción `-a`
+
+`ls -a`{{execute}}
+
+Para ver los archivos y carpetas de forma recursiva utilizamos la opción `-R`
+
+`ls -Ra`{{execute}}
+
+### apt
+Apt (Advanced Packaging Tool) nos permite instalar, actualizar o eliminar aplicaciones
+
+Para sincronizar las fuentes de los paquetes usamos 
+
+`apt update`{{execute}}
+
+Para actualizar todos los paquetes a la ultima versión usamos `apt upgrade` para este taller no es necesario ejecutarlo.
+
+Para instalar un paquete usamos la opción `install`
+
+`apt install tree`{{execute}}
+
 ### cd
 Cd (Change Directory) nos permite movernos entre directorios
 
@@ -56,11 +77,13 @@ Mv (Move) nos permite mover archivos o directorios
 `mv cinturon-negro.txt taller-ninja/carpeta3/`{{execute}}
 
 ### rm
-Rm (Remove) Elimina 
+Rm (Remove) nos sirve para eliminar un archivo o directorio, para borrar un archivo usamos el comando `rm taller-ninja/carpeta3/cinturon-negro.txt`{{execute}}
 
+Para borrar una carpeta de forma recursiva utilizar la opción `-r`, la opción `-f` sirve para no pedir confirmación y forzar el borrado.
+
+`rm -rf taller-ninja/`{{execute}}
 
 ### cat
+Nos permite ver el contenido de un archivo
 
-
-
-### apt
+`cat /etc/hosts`{{execute}}
