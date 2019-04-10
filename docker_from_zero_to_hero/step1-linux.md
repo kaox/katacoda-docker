@@ -58,9 +58,7 @@ Cd (Change Directory) nos permite movernos entre directorios
 
 `cd taller-ninja/carpeta1/`{{execute}}
 
-Y si queremos subir de nivel (es decir retroceder una carpeta)
-
-`cd ../`{{execute}}
+Y si queremos subir de nivel (es decir retroceder una carpeta) utilizamos el comando`cd ../`
 
 ### cp
 Cp (Copy) nos permite copiar archivos o directorios
