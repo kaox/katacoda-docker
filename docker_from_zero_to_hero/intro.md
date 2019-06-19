@@ -5,4 +5,5 @@ Para mas información visite https://www.docker.com/
 ## Temario
 
 * Linux - Comandos Basicos
-* 
+* $ docker image
+* $ docker container
