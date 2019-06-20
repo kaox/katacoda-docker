@@ -30,7 +30,7 @@ Probamos nuestro servicio [URL]/persona/ruc/ [URL]/persona/dni/
 
 Ahora creamos el archivo bitbucket-pipelines.yml con el siguiente contenido
 
-```yaml
+```
 image: atlassian/default-image:2
 
 pipelines:
