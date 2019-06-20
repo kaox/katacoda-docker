@@ -1,8 +1,8 @@
 {
-  "title": "Docker from Zero to Hero",
-  "description": "Dockerinzado aplicativos",
-  "difficulty": "intermedio",
-  "time": "30 minutes",
+  "title": "Docker from Zero to Hero - Parte 1",
+  "description": "Comandos Basicos de Linux y Docker",
+  "difficulty": "Basico",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
