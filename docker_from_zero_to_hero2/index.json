@@ -17,8 +17,11 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "Dockerfile"
+  ],
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "docker"
