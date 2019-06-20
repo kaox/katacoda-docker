@@ -6,8 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Dockerizando una app Java",
+        "title": "Dockerizando una app Java spring-boot",
         "text": "step1-java.md"
+      },
+      {
+        "title": "Dockerizando una app Java & Deploy en Tomcat",
+        "text": "step2-java.md"
       }
     ],
     "intro": {
