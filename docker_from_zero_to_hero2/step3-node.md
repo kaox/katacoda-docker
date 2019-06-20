@@ -26,7 +26,7 @@ CMD ["npm", "start"]
 
 Luego compilamos nuestra imagen `docker build -t node-app .`{{execute}} y la ejecutamos `docker run -d -p 80:3000 node-app`{{execute}}
 
-Probamos nuestro servicio [URL]/persona/ruc/ [URL]/persona/dni/
+Probamos nuestro servicio http://URL/persona/ruc/ http://URL/persona/dni/
 
 Ahora creamos el archivo bitbucket-pipelines.yml con el siguiente contenido
 
