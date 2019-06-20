@@ -31,6 +31,7 @@ Probamos nuestro servicio http://URL/persona/ruc/ http://URL/persona/dni/
 Ahora creamos el archivo bitbucket-pipelines.yml con el siguiente contenido
 
 ```
+
 image: atlassian/default-image:2
 
 pipelines:
@@ -49,4 +50,5 @@ definitions:
   services:
     docker:
       memory: 2048
+
 ```
