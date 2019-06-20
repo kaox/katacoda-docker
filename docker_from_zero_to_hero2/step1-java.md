@@ -1,35 +1,26 @@
-Para este taller vamos a trabajar con una aplicación Java con JSF, los pasos para desplegar esta aplicación son los siguientes:
+Vamos a compilar y ejecutar una aplicación spring-boot con la imagen de maven 3.6.1 con jdk 8 [maven:3.6.1-jdk-8](https://hub.docker.com/_/maven/) para lo cual utilizaemos un Dockerfile
 
-* Compilar proyecto.
-* Desplegar war en Apache Tomcat.
-
-### Compilar proyecto
-
-Vamos a compilar la aplicación con la imagen de maven 3.6.1 con jdk 11 [link](https://hub.docker.com/_/maven/) para lo cual utilizaemos un Dockerfile
-
+Con `FROM` definiremos nuestra imagen base
 <pre class="file" data-filename="Dockerfile" data-target="replace">
 FROM maven:3.6.1-jdk-8
 </pre>
 
+El comando `RUN` nos permite ejecutar comandos en nuestra imagen base
 <pre class="file" data-filename="Dockerfile" data-target="append">
 RUN git clone https://github.com/kaox/spring-petclinic.git
 </pre>
 
+Con `WORKDIR` vamos a especificar la ruta de trabajo
 <pre class="file" data-filename="Dockerfile" data-target="append">
 WORKDIR /spring-petclinic/
 </pre>
 
+Con `CMD` nos permite ejecutar una acción por defecto cuando inicia el contenedor
 <pre class="file" data-filename="Dockerfile" data-target="append">
-CMD git pull; mvn clean spring-boot:run
+CMD mvn clean spring-boot:run
 </pre>
 
-`docker image build -t spring-pet .`{{execute}}
+Para compilar nuestro Dockerfile y convertirla en una imagen ejecutamos `docker image build -t spring-pet .`{{execute}}
 
+Ahora ejecutamos nuestro contenedor exponiendo el puerto 8080 del contenedor y lo mapeamos con el puerto 80 de nuestro host
 `docker container run -d -p 80:8080 spring-pet`{{execute}}
-
-La ejecutamos compartiendo un volumen en nuestro host con el container 
-`docker image build -t spring-pet .`{{execute}}
-docker container run -it -v /home/scrapbook/tutorial:/app maven:3.6.1-jdk-11 bash
-
-Ahora nos ubicamos en la carpeta /root `cd /root`{{execute}} dentro del container y descargaremos el codigo fuente de la aplicacion `git clone https://github.com/kaox/project-java-jsf-webapp.git`{{execute}} 
-
