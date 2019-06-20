@@ -15,8 +15,18 @@ FROM maven:3.5.4-jdk-8
 RUN git clone https://github.com/kaox/spring-petclinic.git
 </pre>
 
+<pre class="file" data-filename="Dockerfile" data-target="append">
+WORKDIR /spring-petclinic/
+</pre>
+
+<pre class="file" data-filename="Dockerfile" data-target="append">
+CMD git pull; mvn clean spring-boot:run
+</pre>
+
+`docker image build -t spring-pet .`{{execute}}
+
 La ejecutamos compartiendo un volumen en nuestro host con el container 
-`docker container run -it --mount type=bind,source=/home/scrapbook/tutorial,target=/app,bind-propagation=rprivate maven:3.6.1-jdk-11 bash`{{execute}}
+`docker image build -t spring-pet .`{{execute}}
 docker container run -it -v /home/scrapbook/tutorial:/app maven:3.6.1-jdk-11 bash
 
 Ahora nos ubicamos en la carpeta /root `cd /root`{{execute}} dentro del container y descargaremos el codigo fuente de la aplicacion `git clone https://github.com/kaox/project-java-jsf-webapp.git`{{execute}} 
