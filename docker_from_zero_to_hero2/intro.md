@@ -4,6 +4,6 @@ Para mas información visite https://www.docker.com/
 
 ## Temario
 
-* Linux - Comandos Basicos
-* $ docker image
-* $ docker container
+* Dockerizando una app Java spring-boot
+* Dockerizando una app Java & Deploy en Tomcat
+* Dockerizando una app Node

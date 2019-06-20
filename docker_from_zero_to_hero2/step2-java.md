@@ -1,8 +1,8 @@
-Vamos a compilar la aplicación java jsf con la imagen de maven 3.6.1 con jdk 8 [maven:3.5.4-jdk-8](https://hub.docker.com/_/maven/) y luego lo desplegaremos en un tomcat [tomcat:8.5.42-jdk8-openjdk](https://hub.docker.com/_/tomcat) para lo cual utilizaemos un Dockerfile
+Vamos a compilar la aplicación java jsf con la imagen de maven 3.6.1 con jdk 8 [maven:3.6.1-jdk-8](https://hub.docker.com/_/maven/) y luego lo desplegaremos en un tomcat [tomcat:8.5.42-jdk8-openjdk](https://hub.docker.com/_/tomcat) para lo cual utilizaemos un Dockerfile
 
-Con `FROM` definiremos nuestra imagen base maven:3.5.4-jdk-8 
+Con `FROM` definiremos nuestra imagen base maven:3.6.1-jdk-8
 <pre class="file" data-filename="Dockerfile" data-target="replace">
-FROM maven:3.5.4-jdk-8 as maven
+FROM maven:3.6.1-jdk-8 as maven
 </pre>
 
 Definimos el `WORKDIR` /app/

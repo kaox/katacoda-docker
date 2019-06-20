@@ -12,6 +12,10 @@
       {
         "title": "Dockerizando una app Java & Deploy en Tomcat",
         "text": "step2-java.md"
+      },
+      {
+        "title": "Integración Continua de Node con Docker & Bitbucket Pipeline",
+        "text": "step3-node.md"
       }
     ],
     "intro": {
