@@ -8,7 +8,7 @@ Para este taller vamos a trabajar con una aplicación Java con JSF, los pasos pa
 Vamos a compilar la aplicación con la imagen de maven 3.6.1 con jdk 11 [link](https://hub.docker.com/_/maven/) para lo cual utilizaemos un Dockerfile
 
 <pre class="file" data-filename="Dockerfile" data-target="replace">
-FROM maven:3.6.1-jdk-9
+FROM maven:3.6.1-jdk-8
 </pre>
 
 <pre class="file" data-filename="Dockerfile" data-target="append">
