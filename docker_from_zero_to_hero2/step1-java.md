@@ -8,7 +8,7 @@ Para este taller vamos a trabajar con una aplicación Java con JSF, los pasos pa
 Vamos a compilar la aplicación con la imagen de maven 3.6.1 con jdk 11 [link](https://hub.docker.com/_/maven/) para lo cual utilizaemos un Dockerfile
 
 <pre class="file" data-filename="Dockerfile" data-target="replace">
-FROM maven:3.5.4-jdk-8
+FROM maven:3.6.1-jdk-11
 </pre>
 
 <pre class="file" data-filename="Dockerfile" data-target="append">
@@ -24,6 +24,8 @@ CMD git pull; mvn clean spring-boot:run
 </pre>
 
 `docker image build -t spring-pet .`{{execute}}
+
+`docker container run -d spring-pet`{{execute}}
 
 La ejecutamos compartiendo un volumen en nuestro host con el container 
 `docker image build -t spring-pet .`{{execute}}
