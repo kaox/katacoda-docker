@@ -1,0 +1,42 @@
+{
+  "title": "Docker from Zero to Hero - Parte 2",
+  "description": "Dockerinzado aplicativos",
+  "difficulty": "intermedio",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Linux - Comandos Basicos",
+        "text": "step1-linux.md"
+      },
+      {
+        "title": "$ docker image",
+        "text": "step2-cmd-image.md"
+      },
+      {
+        "title": "$ docker container",
+        "text": "step3-cmd-container.md"
+      },
+      {
+        "title": "$ docker network",
+        "text": "step4-cmd-network.md"
+      },
+      {
+        "title": "$ docker volume",
+        "text": "step5-cmd-volume.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
