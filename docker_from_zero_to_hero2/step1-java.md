@@ -25,7 +25,7 @@ CMD git pull; mvn clean spring-boot:run
 
 `docker image build -t spring-pet .`{{execute}}
 
-`docker container run -d spring-pet`{{execute}}
+`docker container run -d -p 80:8080 spring-pet`{{execute}}
 
 La ejecutamos compartiendo un volumen en nuestro host con el container 
 `docker image build -t spring-pet .`{{execute}}
